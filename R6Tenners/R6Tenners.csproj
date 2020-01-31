@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B9F2ACD0-19CF-43DB-9AC2-3B5817709DFE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>R6Tenners</RootNamespace>
+    <AssemblyName>R6Tenners</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>r6tenners_x1q_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomGamesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomGamesForm.Designer.cs">
+      <DependentUpon>CustomGamesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INIFile.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServerSwitchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerSwitchForm.Designer.cs">
+      <DependentUpon>ServerSwitchForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CustomGamesForm.resx">
+      <DependentUpon>CustomGamesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerSwitchForm.resx">
+      <DependentUpon>ServerSwitchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG\teamcolors.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="r6tenners_x1q_icon.ico" />
+    <Content Include="Resources\BG\vs.png" />
+    <None Include="Resources\Maps\bank.jpg" />
+    <None Include="Resources\Maps\border.jpg" />
+    <None Include="Resources\Maps\chalet.jpg" />
+    <None Include="Resources\Maps\clubhouse.jpg" />
+    <None Include="Resources\Maps\coastline.jpg" />
+    <None Include="Resources\Maps\consulate.jpg" />
+    <None Include="Resources\Maps\favela.jpg" />
+    <None Include="Resources\Maps\fortress.jpg" />
+    <None Include="Resources\Maps\hereford.jpg" />
+    <None Include="Resources\Maps\house.jpg" />
+    <None Include="Resources\Maps\kafe.jpg" />
+    <None Include="Resources\Maps\kanal.jpg" />
+    <None Include="Resources\Maps\oregon.jpg" />
+    <None Include="Resources\Maps\outback.jpg" />
+    <None Include="Resources\Maps\plane.jpg" />
+    <None Include="Resources\Maps\skyscraper.jpg" />
+    <None Include="Resources\Maps\themepark.jpg" />
+    <None Include="Resources\Maps\tower.jpg" />
+    <None Include="Resources\Maps\villa.jpg" />
+    <None Include="Resources\Maps\yatch.jpg" />
+    <Content Include="Resources\Operators\alibi.png" />
+    <Content Include="Resources\Operators\amaru.png" />
+    <Content Include="Resources\Operators\ash.png" />
+    <Content Include="Resources\Operators\bandit.png" />
+    <Content Include="Resources\Operators\blackbeard.png" />
+    <Content Include="Resources\Operators\blitz.png" />
+    <Content Include="Resources\Operators\buck.png" />
+    <Content Include="Resources\Operators\capitao.png" />
+    <Content Include="Resources\Operators\castle.png" />
+    <Content Include="Resources\Operators\caveira.png" />
+    <Content Include="Resources\Operators\clash.png" />
+    <Content Include="Resources\Operators\doc.png" />
+    <Content Include="Resources\Operators\dokkaebi.png" />
+    <Content Include="Resources\Operators\echo.png" />
+    <Content Include="Resources\Operators\ela.png" />
+    <Content Include="Resources\Operators\finka.png" />
+    <Content Include="Resources\Operators\frost.png" />
+    <Content Include="Resources\Operators\fuze.png" />
+    <Content Include="Resources\Operators\glaz.png" />
+    <Content Include="Resources\Operators\goyo.png" />
+    <Content Include="Resources\Operators\gridlock.png" />
+    <Content Include="Resources\Operators\hibana.png" />
+    <Content Include="Resources\Operators\iq.png" />
+    <Content Include="Resources\Operators\jackal.png" />
+    <Content Include="Resources\Operators\jager.png" />
+    <Content Include="Resources\Operators\kaid.png" />
+    <Content Include="Resources\Operators\kali.png" />
+    <Content Include="Resources\Operators\kapkan.png" />
+    <Content Include="Resources\Operators\lesion.png" />
+    <Content Include="Resources\Operators\lion.png" />
+    <Content Include="Resources\Operators\maestro.png" />
+    <Content Include="Resources\Operators\maverick.png" />
+    <Content Include="Resources\Operators\mira.png" />
+    <Content Include="Resources\Operators\montagne.png" />
+    <Content Include="Resources\Operators\mozzie.png" />
+    <Content Include="Resources\Operators\mute.png" />
+    <Content Include="Resources\Operators\nokk.png" />
+    <Content Include="Resources\Operators\nomad.png" />
+    <Content Include="Resources\Operators\pulse.png" />
+    <Content Include="Resources\Operators\rook.png" />
+    <Content Include="Resources\Operators\sledge.png" />
+    <Content Include="Resources\Operators\smoke.png" />
+    <Content Include="Resources\Operators\tachanka.png" />
+    <Content Include="Resources\Operators\thatcher.png" />
+    <Content Include="Resources\Operators\thermite.png" />
+    <Content Include="Resources\Operators\twitch.png" />
+    <Content Include="Resources\Operators\valkyrie.png" />
+    <Content Include="Resources\Operators\vigil.png" />
+    <Content Include="Resources\Operators\wamai.png" />
+    <Content Include="Resources\Operators\warden.png" />
+    <Content Include="Resources\Operators\ying.png" />
+    <Content Include="Resources\Operators\zofia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
