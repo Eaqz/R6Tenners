@@ -125,6 +125,7 @@ namespace R6Tenners
 
         private void themecolour_Cb_SelectedIndexChanged(object sender, EventArgs e)
         {
+            MetroFramework.MetroColorStyle selectedStyle = this.Style;
             MetroTextBox[] Usernames = { player1_tb, player2_tb, player3_tb, player4_tb, player5_tb, player6_tb, player7_tb, player8_tb, player9_tb, player10_tb };
             MetroCheckBox[] DLCs = { dlc1_cb1, dlc1_cb2, dlc1_cb3, dlc1_cb4, dlc1_cb5, dlc1_cb6, dlc1_cb7, dlc1_cb8, dlc1_cb9, dlc1_cb10,
                                dlc2_cb1, dlc2_cb2, dlc2_cb3, dlc2_cb4, dlc2_cb5, dlc2_cb6, dlc2_cb7, dlc2_cb8, dlc2_cb9, dlc2_cb10,
@@ -134,223 +135,82 @@ namespace R6Tenners
             switch (themecolour_Cb.Text)
             {
                 case "Black":
-                    this.Style = MetroFramework.MetroColorStyle.Black;
-                    esl_Cb.Style = MetroFramework.MetroColorStyle.Black;
-                    mapRoll_Cb.Style = MetroFramework.MetroColorStyle.Black;
-                    randomOP_Cb.Style = MetroFramework.MetroColorStyle.Black;
-                    foreach (MetroTextBox MTB in Usernames)
-                    {
-                        MTB.Style = MetroFramework.MetroColorStyle.Black;
-                    }
-                    foreach (MetroCheckBox DCB in DLCs)
-                    {
-                        DCB.Style = MetroFramework.MetroColorStyle.Black;
-                    }
+                    selectedStyle = MetroFramework.MetroColorStyle.Black;
                     break;
 
                 case "White":
-                    this.Style = MetroFramework.MetroColorStyle.White;
-                    esl_Cb.Style = MetroFramework.MetroColorStyle.White;
-                    mapRoll_Cb.Style = MetroFramework.MetroColorStyle.White;
-                    randomOP_Cb.Style = MetroFramework.MetroColorStyle.White;
-                    foreach (MetroTextBox MTB in Usernames)
-                    {
-                        MTB.Style = MetroFramework.MetroColorStyle.White;
-                    }
-                    foreach (MetroCheckBox DCB in DLCs)
-                    {
-                        DCB.Style = MetroFramework.MetroColorStyle.White;
-                    }
+                    selectedStyle = MetroFramework.MetroColorStyle.White;
                     break;
 
                 case "Silver":
-                    this.Style = MetroFramework.MetroColorStyle.Silver;
-                    esl_Cb.Style = MetroFramework.MetroColorStyle.Silver;
-                    mapRoll_Cb.Style = MetroFramework.MetroColorStyle.Silver;
-                    randomOP_Cb.Style = MetroFramework.MetroColorStyle.Silver;
-                    foreach (MetroTextBox MTB in Usernames)
-                    {
-                        MTB.Style = MetroFramework.MetroColorStyle.Silver;
-                    }
-                    foreach (MetroCheckBox DCB in DLCs)
-                    {
-                        DCB.Style = MetroFramework.MetroColorStyle.Silver;
-                    }
+                    selectedStyle = MetroFramework.MetroColorStyle.Silver;
                     break;
 
                 case "Blue":
-                    this.Style = MetroFramework.MetroColorStyle.Blue;
-                    esl_Cb.Style = MetroFramework.MetroColorStyle.Blue;
-                    mapRoll_Cb.Style = MetroFramework.MetroColorStyle.Blue;
-                    randomOP_Cb.Style = MetroFramework.MetroColorStyle.Blue;
-                    foreach (MetroTextBox MTB in Usernames)
-                    {
-                        MTB.Style = MetroFramework.MetroColorStyle.Blue;
-                    }
-                    foreach (MetroCheckBox DCB in DLCs)
-                    {
-                        DCB.Style = MetroFramework.MetroColorStyle.Blue;
-                    }
+                    selectedStyle = MetroFramework.MetroColorStyle.Blue;
                     break;
 
                 case "Green":
-                    this.Style = MetroFramework.MetroColorStyle.Green;
-                    esl_Cb.Style = MetroFramework.MetroColorStyle.Green;
-                    mapRoll_Cb.Style = MetroFramework.MetroColorStyle.Green;
-                    randomOP_Cb.Style = MetroFramework.MetroColorStyle.Green;
-                    foreach (MetroTextBox MTB in Usernames)
-                    {
-                        MTB.Style = MetroFramework.MetroColorStyle.Green;
-                    }
-                    foreach (MetroCheckBox DCB in DLCs)
-                    {
-                        DCB.Style = MetroFramework.MetroColorStyle.Green;
-                    }
+                    selectedStyle = MetroFramework.MetroColorStyle.Green;
                     break;
 
                 case "Lime":
-                    this.Style = MetroFramework.MetroColorStyle.Lime;
-                    esl_Cb.Style = MetroFramework.MetroColorStyle.Lime;
-                    mapRoll_Cb.Style = MetroFramework.MetroColorStyle.Lime;
-                    randomOP_Cb.Style = MetroFramework.MetroColorStyle.Lime;
-                    foreach (MetroTextBox MTB in Usernames)
-                    {
-                        MTB.Style = MetroFramework.MetroColorStyle.Lime;
-                    }
-                    foreach (MetroCheckBox DCB in DLCs)
-                    {
-                        DCB.Style = MetroFramework.MetroColorStyle.Lime;
-                    }
+                    selectedStyle = MetroFramework.MetroColorStyle.Lime;
                     break;
 
                 case "Teal":
-                    this.Style = MetroFramework.MetroColorStyle.Teal;
-                    esl_Cb.Style = MetroFramework.MetroColorStyle.Teal;
-                    mapRoll_Cb.Style = MetroFramework.MetroColorStyle.Teal;
-                    randomOP_Cb.Style = MetroFramework.MetroColorStyle.Teal;
-                    foreach (MetroTextBox MTB in Usernames)
-                    {
-                        MTB.Style = MetroFramework.MetroColorStyle.Teal;
-                    }
-                    foreach (MetroCheckBox DCB in DLCs)
-                    {
-                        DCB.Style = MetroFramework.MetroColorStyle.Teal;
-                    }
+                    selectedStyle = MetroFramework.MetroColorStyle.Teal;
                     break;
 
                 case "Orange":
-                    this.Style = MetroFramework.MetroColorStyle.Orange;
-                    esl_Cb.Style = MetroFramework.MetroColorStyle.Orange;
-                    mapRoll_Cb.Style = MetroFramework.MetroColorStyle.Orange;
-                    randomOP_Cb.Style = MetroFramework.MetroColorStyle.Orange;
-                    foreach (MetroTextBox MTB in Usernames)
-                    {
-                        MTB.Style = MetroFramework.MetroColorStyle.Orange;
-                    }
-                    foreach (MetroCheckBox DCB in DLCs)
-                    {
-                        DCB.Style = MetroFramework.MetroColorStyle.Orange;
-                    }
+                    selectedStyle = MetroFramework.MetroColorStyle.Orange;
                     break;
 
                 case "Brown":
-                    this.Style = MetroFramework.MetroColorStyle.Brown;
-                    esl_Cb.Style = MetroFramework.MetroColorStyle.Brown;
-                    mapRoll_Cb.Style = MetroFramework.MetroColorStyle.Brown;
-                    randomOP_Cb.Style = MetroFramework.MetroColorStyle.Brown;
-                    foreach (MetroTextBox MTB in Usernames)
-                    {
-                        MTB.Style = MetroFramework.MetroColorStyle.Brown;
-                    }
-                    foreach (MetroCheckBox DCB in DLCs)
-                    {
-                        DCB.Style = MetroFramework.MetroColorStyle.Brown;
-                    }
+                    selectedStyle = MetroFramework.MetroColorStyle.Brown;
                     break;
 
                 case "Pink":
-                    this.Style = MetroFramework.MetroColorStyle.Pink;
-                    esl_Cb.Style = MetroFramework.MetroColorStyle.Pink;
-                    mapRoll_Cb.Style = MetroFramework.MetroColorStyle.Pink;
-                    randomOP_Cb.Style = MetroFramework.MetroColorStyle.Pink;
-                    foreach (MetroTextBox MTB in Usernames)
-                    {
-                        MTB.Style = MetroFramework.MetroColorStyle.Pink;
-                    }
-                    foreach (MetroCheckBox DCB in DLCs)
-                    {
-                        DCB.Style = MetroFramework.MetroColorStyle.Pink;
-                    }
+                    selectedStyle = MetroFramework.MetroColorStyle.Pink;
                     break;
 
                 case "Magenta":
-                    this.Style = MetroFramework.MetroColorStyle.Magenta;
-                    esl_Cb.Style = MetroFramework.MetroColorStyle.Magenta;
-                    mapRoll_Cb.Style = MetroFramework.MetroColorStyle.Magenta;
-                    randomOP_Cb.Style = MetroFramework.MetroColorStyle.Magenta;
-                    foreach (MetroTextBox MTB in Usernames)
-                    {
-                        MTB.Style = MetroFramework.MetroColorStyle.Magenta;
-                    }
-                    foreach (MetroCheckBox DCB in DLCs)
-                    {
-                        DCB.Style = MetroFramework.MetroColorStyle.Magenta;
-                    }
+                    selectedStyle = MetroFramework.MetroColorStyle.Magenta;
                     break;
 
                 case "Purple":
-                    this.Style = MetroFramework.MetroColorStyle.Purple;
-                    esl_Cb.Style = MetroFramework.MetroColorStyle.Purple;
-                    mapRoll_Cb.Style = MetroFramework.MetroColorStyle.Purple;
-                    randomOP_Cb.Style = MetroFramework.MetroColorStyle.Purple;
-                    foreach (MetroTextBox MTB in Usernames)
-                    {
-                        MTB.Style = MetroFramework.MetroColorStyle.Purple;
-                    }
-                    foreach (MetroCheckBox DCB in DLCs)
-                    {
-                        DCB.Style = MetroFramework.MetroColorStyle.Purple;
-                    }
+                    selectedStyle = MetroFramework.MetroColorStyle.Purple;
                     break;
 
                 case "Red":
-                    this.Style = MetroFramework.MetroColorStyle.Red;
-                    esl_Cb.Style = MetroFramework.MetroColorStyle.Red;
-                    mapRoll_Cb.Style = MetroFramework.MetroColorStyle.Red;
-                    randomOP_Cb.Style = MetroFramework.MetroColorStyle.Red;
-                    foreach (MetroTextBox MTB in Usernames)
-                    {
-                        MTB.Style = MetroFramework.MetroColorStyle.Red;
-                    }
-                    foreach (MetroCheckBox DCB in DLCs)
-                    {
-                        DCB.Style = MetroFramework.MetroColorStyle.Red;
-                    }
+                    selectedStyle = MetroFramework.MetroColorStyle.Red;
                     break;
 
                 case "Yellow":
-                    this.Style = MetroFramework.MetroColorStyle.Yellow;
-                    esl_Cb.Style = MetroFramework.MetroColorStyle.Yellow;
-                    mapRoll_Cb.Style = MetroFramework.MetroColorStyle.Yellow;
-                    randomOP_Cb.Style = MetroFramework.MetroColorStyle.Yellow;
-                    foreach (MetroTextBox MTB in Usernames)
-                    {
-                        MTB.Style = MetroFramework.MetroColorStyle.Yellow;
-                    }
-                    foreach (MetroCheckBox DCB in DLCs)
-                    {
-                        DCB.Style = MetroFramework.MetroColorStyle.Yellow;
-                    }
+                    selectedStyle = MetroFramework.MetroColorStyle.Yellow;
                     break;
             }
 
+            this.Style = selectedStyle;
+            esl_Cb.Style = selectedStyle;
+            mapRoll_Cb.Style = selectedStyle;
+            randomOP_Cb.Style = selectedStyle;
+            themecolour_Cb.Style = selectedStyle;
+            foreach (MetroTextBox MTB in Usernames)
+            {
+                MTB.Style = selectedStyle;
+            }
+            foreach (MetroCheckBox DCB in DLCs)
+            {
+                DCB.Style = selectedStyle;
+            }
             this.Refresh();
         }
 
         private void changeserver_Btn_Click(object sender, EventArgs e)
         {
-            ServerSwitchForm switchform = new ServerSwitchForm();
-            switchform.Show();
+            ServerSwitchForm switchform = new ServerSwitchForm(this.Style);
+            switchform.ShowDialog();
         }
 
         private void resetnames_btn_Click(object sender, EventArgs e)

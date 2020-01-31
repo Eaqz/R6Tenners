@@ -18,7 +18,6 @@ namespace R6Tenners
     {
         // Get Directory for Profiles
         string ProfilesDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal‌​) + "\\My Games\\Rainbow Six - Siege";
-
         private void UpdateCurrentLabels()
         {
             // Search all files with ".ini" extension and store in array
@@ -52,10 +51,21 @@ namespace R6Tenners
 
             profiles_Lb.Text = "Detected Profiles : " + filePaths.Count().ToString();
         }
-        public ServerSwitchForm()
+
+        private void SetTheme(MetroFramework.MetroColorStyle colorStyle)
+        {
+            this.Style = colorStyle;
+            server_Cb.Style = colorStyle;
+
+            this.Refresh();
+        }
+        public ServerSwitchForm(MetroFramework.MetroColorStyle colorStyle)
         {
             InitializeComponent();
+
             server_Cb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+
+            SetTheme(colorStyle);
             UpdateCurrentLabels();
         }
 

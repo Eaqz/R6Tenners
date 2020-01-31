@@ -81,6 +81,7 @@
             this.player2_tb = new MetroFramework.Controls.MetroTextBox();
             this.player1_tb = new MetroFramework.Controls.MetroTextBox();
             this.tools_gb = new System.Windows.Forms.GroupBox();
+            this.changeserver_Btn = new MetroFramework.Controls.MetroButton();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.themecolour_Cb = new MetroFramework.Controls.MetroComboBox();
             this.randomOP_Cb = new MetroFramework.Controls.MetroCheckBox();
@@ -144,7 +145,6 @@
             this.map_Lb = new MetroFramework.Controls.MetroLabel();
             this.map_Pb = new System.Windows.Forms.PictureBox();
             this.version_Lb = new MetroFramework.Controls.MetroLabel();
-            this.changeserver_Btn = new MetroFramework.Controls.MetroButton();
             this.players_gb.SuspendLayout();
             this.tools_gb.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -1142,14 +1142,26 @@
             this.tools_gb.TabStop = false;
             this.tools_gb.Text = "Tools / Options";
             // 
+            // changeserver_Btn
+            // 
+            this.changeserver_Btn.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.changeserver_Btn.Location = new System.Drawing.Point(319, 18);
+            this.changeserver_Btn.Name = "changeserver_Btn";
+            this.changeserver_Btn.Size = new System.Drawing.Size(99, 23);
+            this.changeserver_Btn.TabIndex = 104;
+            this.changeserver_Btn.Text = "Server Region";
+            this.changeserver_Btn.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.changeserver_Btn.UseSelectable = true;
+            this.changeserver_Btn.Click += new System.EventHandler(this.changeserver_Btn_Click);
+            // 
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(319, 68);
+            this.metroLabel1.Location = new System.Drawing.Point(369, 68);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(93, 19);
+            this.metroLabel1.Size = new System.Drawing.Size(49, 19);
             this.metroLabel1.TabIndex = 103;
-            this.metroLabel1.Text = "Theme Colour";
+            this.metroLabel1.Text = "Theme";
             this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // themecolour_Cb
@@ -1174,6 +1186,7 @@
             this.themecolour_Cb.Location = new System.Drawing.Point(319, 90);
             this.themecolour_Cb.Name = "themecolour_Cb";
             this.themecolour_Cb.Size = new System.Drawing.Size(99, 29);
+            this.themecolour_Cb.Style = MetroFramework.MetroColorStyle.Red;
             this.themecolour_Cb.TabIndex = 102;
             this.themecolour_Cb.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.themecolour_Cb.UseSelectable = true;
@@ -2045,18 +2058,6 @@
             this.version_Lb.Text = "Current Version : 1.0";
             this.version_Lb.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.version_Lb.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // changeserver_Btn
-            // 
-            this.changeserver_Btn.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.changeserver_Btn.Location = new System.Drawing.Point(319, 18);
-            this.changeserver_Btn.Name = "changeserver_Btn";
-            this.changeserver_Btn.Size = new System.Drawing.Size(99, 23);
-            this.changeserver_Btn.TabIndex = 104;
-            this.changeserver_Btn.Text = "Server Region";
-            this.changeserver_Btn.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.changeserver_Btn.UseSelectable = true;
-            this.changeserver_Btn.Click += new System.EventHandler(this.changeserver_Btn_Click);
             // 
             // CustomGamesForm
             // 
